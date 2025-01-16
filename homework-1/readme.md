@@ -11,7 +11,7 @@ VS Code is a application used commonly to create HTML code in or even C# for uni
 
 ### Version Control, Git, & GitHub
 
-Version control is using Git and GitHub to see and control the version of the code you have. Git is a thing used to help upload things directly from VSCode to GitHub and GitHub is used to share your code in an easier and store it incase your code is affected in a way you dont like you can refresh from the GitHub, or replace it with newer code as needed. Basically a way to store versions of your code.
+Version control is using Git and GitHub to see and control the version of the code you have. Git is a thing used to help upload things directly from VSCode to GitHub and is used to help share code. GitHub is used to share your code in an easier and store it incase your code is affected in a way you dont like you can refresh from the GitHub, or replace it with newer code as needed. Basically a way to store versions of your code.
 
 ### Markdown & Documentation
 
