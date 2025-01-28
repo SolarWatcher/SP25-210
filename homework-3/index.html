@@ -11,9 +11,47 @@
         <li>
           <a href="index.html">Home</a>
         </li>
+        <li>
+          <a href="moreforms.html">More Forms</a>
+        </li>
       </ul>
     </nav>
 
     <h1>Containers and Forms</h1>
+
+    <form action="index.html" method="get">
+      <div>
+        <label for="favoriteSnack">Favorite Snack:</label>
+        <input
+          type="text"
+          name="favoriteSnack"
+          id="favoriteSnack"
+          placeholder="Mac n Cheese"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="leastFavoriteSnack">Least Favorite Snack:</label>
+        <input
+          type="text"
+          name="leastFavoriteSnack"
+          id="leastFavoriteSnack"
+          value="Sun Chips"
+        />
+      </div>
+
+      <div>
+        <label for="explain">Explain Your Choices</label>
+        <textarea name="explain" id="explain"></textarea>
+      </div>
+
+      <div>
+        <label for="snackColorMood">Snack Color Mood</label>
+        <input type="color" name="snackColormood" id="snackColorMood" />
+      </div>
+
+      <input type="submit" value="Submit Snacks" />
+    </form>
   </body>
 </html>
