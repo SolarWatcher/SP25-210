@@ -1,0 +1,42 @@
+p {
+  color: red;
+  background-color: black;
+}
+
+#lemon {
+  padding: 100px;
+}
+
+.bananaGuard {
+  font-size: 40px;
+}
+
+/* How to style a thing directly after another thing, in this case it styles all p directly after a h4 tag */
+h4 + p {
+    height: 30px;
+    background-color: red;
+    color
+
+/* How to style a thing after a thing no matter how many are between, in this case it styles every p after the h1 tag */
+h1 ~ p {
+  padding-bottom: 200px;
+}
+
+ul li {
+  list-style: url(https://png.pngtree.com/element_pic/17/01/09/a45fe65956215affe0c34a933d19d188.jpg);
+  margin-left: 250px;
+}
+
+body > h4 {
+  font-size: 10px;
+}
+
+body {
+    font-family: fantasy;
+}
+
+a {
+    background-color: aquamarine;
+    display: block;
+    height: 200px;
+}
