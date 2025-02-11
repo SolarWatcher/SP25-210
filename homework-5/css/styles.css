@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+#box-model {
+  background-color: lightslategrey;
+  padding: 10px;
+  border: 3px solid brown;
+  margin: 10px;
+}
+
+#flexbox {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* justify-content used for horizon'tal alignment in rows */
+  justify-content: space-evenly;
+  /* align-items: used for vertical alignment in rows */
+  align-items: center;
+}
+
+#flexbox p {
+  width: 200px;
+  border: 1px solid aquamarine;
+}
+
+nav {
+  background-color: darkblue;
+  border: 2px solid black;
+}
+
+nav ul {
+  height: 30px;
+  width: 100%;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  /* top, right, bottom, left order of pixel padding */
+  padding: 4px 8px 4px 8px;
+}
+
+nav ul li {
+  margin-right: 8px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.title {
+  margin-right: auto;
+  order: 2;
+}
+
+/* moving to grid */
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 10px 26px;
+}
+
+.grid p {
+  border: 1px solid black;
+  margin: 0;
+}
+
+.row-2 {
+  grid-row: span 2;
+}
+
+.col-2 {
+  grid-column: span 2;
+}
+
+.col-3 {
+  grid-column: span 3;
+}
