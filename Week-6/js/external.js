@@ -20,3 +20,21 @@ myName = "Su"
 
 console.log("myName has uppercase:", myName !== myName.toLowerCase());
 console.log("myName has lowercase:", myName !== myName.toUpperCase());
+
+const PI = 3.1415926535897932384626;
+
+console.log(PI.toFixed(2));
+
+// get a random number between 1-100
+
+const randomNumber = Math.floor(Math.random() * 100)+1;
+
+console.log("random number: " + randomNumber);
+
+console.log(Math.PI - PI, PI.toString().length);
+
+console.log(PI, PI.toString());
+
+console.log("loose check", PI == PI.toString());
+console.log("strict check", PI === PI.toString());
+
