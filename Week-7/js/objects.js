@@ -18,10 +18,12 @@ const person = {
 
 console.log(person.name);
 
+
+
 person.sayHello();
 
 function whatDoesTheFoxSay {
-    console.log("yip")
-};
+    console.log("yip!");
+}
 
 whatDoesTheFoxSay();

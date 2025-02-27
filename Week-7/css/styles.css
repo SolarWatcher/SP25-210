@@ -45,3 +45,10 @@ nav ul li a {
 body {
   background-color: silver;
 }
+
+.item {
+  margin-left: 16px;
+  border: 1px solid black;
+  padding: 8px;
+  width: 100px;
+}
