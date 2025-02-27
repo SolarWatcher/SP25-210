@@ -31,3 +31,19 @@ for (let i = 0; i < melons.length; i++) {
     ulRef.innerHTML += "<li class= 'item'>" + melon + "</li>"
     
 }
+
+titleRef.style.backgroundColor = "red";
+titleRef.style.color = "#00ff00";
+titleRef.style.fontSize - "10px";
+
+document.querySelector("body > ul li").style.display = "none";
+document.querySelector("body > ul li").style.display = "block";
+
+document.querySelector("nav ul").style.display = "flex";
+
+const firstARef = document.querySelector("a");
+
+console.log("first a:", firstARef);
+
+firstARef.href = "dom.html";
+firstARef.setAttribute("target", "_blank");
