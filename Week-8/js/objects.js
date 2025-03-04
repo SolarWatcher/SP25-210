@@ -53,3 +53,6 @@ const characters = [
     {name: "Rogue", hp: 5, def: 2, atk: 5, spd: 8},
     {name: "John", hp: 99, def: 99, atk: 99, spd: 99},
 ]
+
+console.log("First Characters:",
+    characters[0].name);
