@@ -10,4 +10,4 @@ Brief description of understanding. Use any combination of markdown techniques.
 
 ### Live Link
 
-[AdventureStoryPage](https://SolarWatcher.github.io/SP25-210/Homework-4)
+[Adventure Story Page](https://SolarWatcher.github.io/SP25-210/Homework-4)
