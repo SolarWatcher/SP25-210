@@ -288,7 +288,7 @@ function startAdventure() {
                                             adventureRef.style.color = "crimson";
                                             bodyRef.style.color = "crimson";
             
-                                            adventureRef.innerHTML += "<p>As the timer finishes the room suddenly rumbles, before collapsing in on it's self. You are buried beneath the sands and rumble, lost to time.</p>"
+                                            adventureRef.innerHTML += "<p>As the timer finishes the room suddenly rumbles, before collapsing in on it's self. You are buried beneath the sands and debris, lost to time.</p>"
             
                                             adventureRef.innerHTML += "<p>Your Adventure Comes To An End.</p>"
             
