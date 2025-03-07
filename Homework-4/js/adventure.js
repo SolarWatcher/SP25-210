@@ -101,13 +101,109 @@ function startAdventure() {
             if(confirmChoice) {
                 adventureRef.innerHTML += "<p>You have entered the " + doorName +"</p>"
 
-                doorChoice = {name: doorName};
-
                 if (doorName == "Rotten Door") {
                     bodyRef.style.color = "rgb(64, 220, 134)";
 
                     adventureRef.innerHTML += "<p>Beyond the " + doorName + " lies a simple room covered in mushrooms and vines. As you glance behind you the door has turned into a wall</p>"
                     adventureRef.innerHTML += "<p>Your mind begins to haze, and your vision goes fuzzy. What do you do?</p>"
+
+                    const buttonCreatorFour = [
+                        {option: "Try and Resist"},
+                        {option: "Eat a Mushroom"},
+                    ]
+            
+                    for (let i = 0; i < buttonCreatorFour.length; i++) {
+                        const button = buttonCreatorFour[i];
+                
+                        const newButton = document.createElement("button");
+                        newButton.innerHTML += button.option
+                
+                        newButton.dataset.optionName = button.option;
+                
+                        newButton.onclick = chooseOption;
+                
+                        adventureRef.appendChild(newButton);
+                        
+                    }
+
+                    function chooseOption(e) {
+
+                        console.log(e.currentTarget);
+                        const optionName = e.currentTarget.dataset.optionName;
+                
+                        const confirmChoice = confirm("Are you sure you want to choose to " + optionName + "?")
+                
+                        if(confirmChoice) {
+                            adventureRef.innerHTML += "<p>You chose to " + optionName + "</p>"
+                
+                            if (optionName == "Try and Resist") {
+
+                                adventureRef.style.color = "crimson";
+                                bodyRef.style.color = "crimson";
+
+                                adventureRef.innerHTML += "<p>The effects overwhelm you. You collapse to the floor as your vision fades to black.</p>"
+
+                                adventureRef.innerHTML += "<p>Your Adventure Comes To An End.</p>"
+
+                            }
+                            else if (optionName == "Eat a Mushroom") {
+                                bodyRef.style.color = "bisque";
+                                
+                                adventureRef.innerHTML += "<p>The effects subside. An ominous door appears on the other end of the room allowing for your exit.</p>"
+
+                                const buttonCreatorFive = [
+                                    {option: "Stand still and wait"},
+                                    {option: "Exit the room"},
+                                ]
+                        
+                                for (let i = 0; i < buttonCreatorFive.length; i++) {
+                                    const button = buttonCreatorFive[i];
+                            
+                                    const newButton = document.createElement("button");
+                                    newButton.innerHTML += button.option
+                            
+                                    newButton.dataset.optionName = button.option;
+                            
+                                    newButton.onclick = chooseOption;
+                            
+                                    adventureRef.appendChild(newButton);
+                                    
+                                }
+
+                                function chooseOption(e) {
+
+                                    console.log(e.currentTarget);
+                                    const optionName = e.currentTarget.dataset.optionName;
+                            
+                                    const confirmChoice = confirm("Are you sure you want to choose to " + optionName + "?")
+                            
+                                    if(confirmChoice) {
+                                        adventureRef.innerHTML += "<p>You chose to " + optionName + "</p>"
+                            
+                                        if (optionName == "Stand still and wait") {
+                                            bodyRef.style.color = "greenyellow";
+            
+                                            adventureRef.innerHTML += "<p>As you stand still your vision suddenly goes black. You wake up half covered in sand in the middle of nowhere...</p>"
+            
+                                            adventureRef.innerHTML += "<p>You've escaped the ruins!.. Or have you..?</p>"
+            
+                                        }
+                                        else if (optionName == "Exit the room") {
+                                            adventureRef.style.color = "crimson";
+                                            bodyRef.style.color = "crimson";
+                                            
+                                            adventureRef.innerHTML += "<p>As you attempt to exit the room the vines suddenly dart out, Impaling you.. Your vision fades to black.</p>"
+
+                                            adventureRef.innerHTML += "<p>Your Adventure Comes To An End.</p>"
+            
+                                        }
+                                    }
+                                }
+                            }
+
+                        }
+                
+                    }
 
                 }
                 else if (doorName == "Runic Door") {
@@ -116,12 +212,78 @@ function startAdventure() {
                     adventureRef.innerHTML += "<p>Beyond the " + doorName + " lies a complex room covered in glowing runes that hum at your pressence. As you glance behind you the door has turned into a wall</p>"
                     adventureRef.innerHTML += "<p>Blue runes appear in the air, they seem to start counting down. What do you do?</p>"
 
+                    const buttonCreatorFour = [
+                        {option: "Panic start hitting the runes around the room"},
+                        {option: "Study the floating runes in the air"},
+                    ]
+            
+                    for (let i = 0; i < buttonCreatorFour.length; i++) {
+                        const button = buttonCreatorFour[i];
+                
+                        const newButton = document.createElement("button");
+                        newButton.innerHTML += button.option
+                
+                        newButton.dataset.optionName = button.option;
+                
+                        newButton.onclick = chooseOption;
+                
+                        adventureRef.appendChild(newButton);
+                        
+                    }
+
+                    function chooseOption(e) {
+
+                        console.log(e.currentTarget);
+                        const optionName = e.currentTarget.dataset.optionName;
+                
+                        const confirmChoice = confirm("Are you sure you want to choose to " + optionName + "?")
+                
+                        if(confirmChoice) {
+                            adventureRef.innerHTML += "<p>You chose to " + optionName + "</p>"
+                
+                        }
+                
+                    }
+
                 }
                 else if (doorName == "Ruined Door") {
                     bodyRef.style.color = "rgb(255, 222, 90)";
 
                     adventureRef.innerHTML += "<p>Beyond the " + doorName + " lies a broken down room with cracks running through the floors and walls. As you glance behind you the door has turned into a wall</p>"
                     "<p>As you glance back sand start pouring in from the cracks in the wall, begining to flood the room. What do you do?</p>"
+
+                    const buttonCreatorFour = [
+                        {option: "Try and crawl through one of the cracks"},
+                        {option: "Let the sand pile in"},
+                    ]
+            
+                    for (let i = 0; i < buttonCreatorFour.length; i++) {
+                        const button = buttonCreatorFour[i];
+                
+                        const newButton = document.createElement("button");
+                        newButton.innerHTML += button.option
+                
+                        newButton.dataset.optionName = button.option;
+                
+                        newButton.onclick = chooseOption;
+                
+                        adventureRef.appendChild(newButton);
+                        
+                    }
+
+                    function chooseOption(e) {
+
+                        console.log(e.currentTarget);
+                        const optionName = e.currentTarget.dataset.optionName;
+                
+                        const confirmChoice = confirm("Are you sure you want to choose to " + optionName + "?")
+                
+                        if(confirmChoice) {
+                            adventureRef.innerHTML += "<p>You chose to " + optionName + "</p>"
+                
+                        }
+                
+                    }
 
                 }
             }
