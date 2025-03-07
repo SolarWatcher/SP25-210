@@ -69,3 +69,8 @@ button:hover {
   background-color: black;
   color: greenyellow;
 }
+
+main section p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
