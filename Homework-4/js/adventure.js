@@ -241,6 +241,70 @@ function startAdventure() {
                         if(confirmChoice) {
                             adventureRef.innerHTML += "<p>You chose to " + optionName + "</p>"
                 
+                            if (optionName == "Panic start hitting the runes around the room") {
+
+                                adventureRef.style.color = "crimson";
+                                bodyRef.style.color = "crimson";
+
+                                adventureRef.innerHTML += "<p>Upon slapping one of the random runes it causes the room to collapse, caving in on top of you and burying you beneath the sands</p>"
+
+                                adventureRef.innerHTML += "<p>Your Adventure Comes To An End.</p>"
+
+                            }
+                            else if (optionName == "Study the floating runes in the air") {
+                                
+                                adventureRef.innerHTML += "<p>You find that there is a rune that isn't changing as it counts down, as you look around you spot that rune upon the wall</p>"
+
+                                const buttonCreatorFive = [
+                                    {option: "Wait for the timer to finish"},
+                                    {option: "Go and press the rune that you found a second of"},
+                                ]
+                        
+                                for (let i = 0; i < buttonCreatorFive.length; i++) {
+                                    const button = buttonCreatorFive[i];
+                            
+                                    const newButton = document.createElement("button");
+                                    newButton.innerHTML += button.option
+                            
+                                    newButton.dataset.optionName = button.option;
+                            
+                                    newButton.onclick = chooseOption;
+                            
+                                    adventureRef.appendChild(newButton);
+                                    
+                                }
+
+                                function chooseOption(e) {
+
+                                    console.log(e.currentTarget);
+                                    const optionName = e.currentTarget.dataset.optionName;
+                            
+                                    const confirmChoice = confirm("Are you sure you want to choose to " + optionName + "?")
+                            
+                                    if(confirmChoice) {
+                                        adventureRef.innerHTML += "<p>You chose to " + optionName + "</p>"
+                            
+                                        if (optionName == "Wait for the timer to finish") {
+                                            adventureRef.style.color = "crimson";
+                                            bodyRef.style.color = "crimson";
+            
+                                            adventureRef.innerHTML += "<p>As the timer finishes the room suddenly rumbles, before collapsing in on it's self. You are buried beneath the sands and rumble, lost to time.</p>"
+            
+                                            adventureRef.innerHTML += "<p>Your Adventure Comes To An End.</p>"
+            
+                                        }
+                                        else if (optionName == "Go and press the rune that you found a second of") {
+                                            bodyRef.style.color = "greenyellow";
+                                            
+                                            adventureRef.innerHTML += "<p>As you press the rune the counter stops and a flash of blue light flares up around you. You find yourself standing in the middle of nowhere</p>"
+
+                                            adventureRef.innerHTML += "<p>You've escaped the ruins!.. Or have you..?</p>"
+            
+                                        }
+                                    }
+                                }
+                            }
+
                         }
                 
                     }
@@ -281,6 +345,70 @@ function startAdventure() {
                         if(confirmChoice) {
                             adventureRef.innerHTML += "<p>You chose to " + optionName + "</p>"
                 
+                            if (optionName == "Let the sand pile in") {
+
+                                adventureRef.style.color = "crimson";
+                                bodyRef.style.color = "crimson";
+
+                                adventureRef.innerHTML += "<p>The sands slowly fill the room, covering up the few cracks you could crawl through, soon you are buried beneath the sand as well.</p>"
+
+                                adventureRef.innerHTML += "<p>Your Adventure Comes To An End.</p>"
+
+                            }
+                            else if (optionName == "Try and crawl through one of the cracks") {
+                                
+                                adventureRef.innerHTML += "<p>As you crawl through one of the cracks you find yourself in a room, a circular hole in the roof with a ladder hanging down from it. Sand still pours in behind you.</p>"
+
+                                const buttonCreatorFive = [
+                                    {option: "Let the sand pile in"},
+                                    {option: "Climb out quickly!!"},
+                                ]
+                        
+                                for (let i = 0; i < buttonCreatorFive.length; i++) {
+                                    const button = buttonCreatorFive[i];
+                            
+                                    const newButton = document.createElement("button");
+                                    newButton.innerHTML += button.option
+                            
+                                    newButton.dataset.optionName = button.option;
+                            
+                                    newButton.onclick = chooseOption;
+                            
+                                    adventureRef.appendChild(newButton);
+                                    
+                                }
+
+                                function chooseOption(e) {
+
+                                    console.log(e.currentTarget);
+                                    const optionName = e.currentTarget.dataset.optionName;
+                            
+                                    const confirmChoice = confirm("Are you sure you want to choose to " + optionName + "?")
+                            
+                                    if(confirmChoice) {
+                                        adventureRef.innerHTML += "<p>You chose to " + optionName + "</p>"
+                            
+                                        if (optionName == "Let the sand pile in") {
+                                            adventureRef.style.color = "crimson";
+                                            bodyRef.style.color = "crimson";
+            
+                                            adventureRef.innerHTML += "<p>As the sand piles in you find yourself trapped. Buried beneath it and lost alongside the ruins.</p>"
+            
+                                            adventureRef.innerHTML += "<p>Your Adventure Comes To An End.</p>"
+            
+                                        }
+                                        else if (optionName == "Climb out quickly!!") {
+                                            bodyRef.style.color = "greenyellow";
+                                            
+                                            adventureRef.innerHTML += "<p>You quickly climb the ladder and escape. The ruins are buried beneath the sands, lost to time once more.</p>"
+
+                                            adventureRef.innerHTML += "<p>You've escaped the ruins!</p>"
+            
+                                        }
+                                    }
+                                }
+                            }
+
                         }
                 
                     }
