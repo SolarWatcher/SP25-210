@@ -9,9 +9,9 @@ function catalogPage() {
 const menuRef = document.querySelector("#homeCatalog");
 
 const menuItems = [
-    {image: "/Midterm/ImagesForMidterm/i210-midterm-product1.webp"},
-    {image: "/Midterm/ImagesForMidterm/i210-midterm-product2.webp"},
-    {image: "/Midterm/ImagesForMidterm/i210-midterm-product3.webp"},
+    {image: "ImagesForMidterm/i210-midterm-product1.webp"},
+    {image: "ImagesForMidterm/i210-midterm-product2.webp"},
+    {image: "ImagesForMidterm/i210-midterm-product3.webp"},
 ];
 
 menuRef.innerHTML = "";
