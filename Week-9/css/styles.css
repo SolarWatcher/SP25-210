@@ -64,13 +64,13 @@ nav ul li a.logo {
   width: 400px;
 }
 
-#menu article {
+#catalogSelection article {
   width: 200px;
   display: grid;
   text-align: center;
   gap: 20px;
 }
 
-#menu article img {
+#catalogSelection article img {
   height: 200px;
 }
