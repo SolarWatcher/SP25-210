@@ -9,9 +9,9 @@ function catalogPage() {
 const menuRef = document.querySelector("#homeCatalog");
 
 const menuItems = [
-    {image: "ImagesForMidterm/i210-midterm-product1.webp"},
-    {image: "ImagesForMidterm/i210-midterm-product2.webp"},
-    {image: "ImagesForMidterm/i210-midterm-product3.webp"},
+    {image: "https://picsum.photos/200/200"},
+    {image: "https://picsum.photos/210/200"},
+    {image: "https://picsum.photos/220/200"},
 ];
 
 menuRef.innerHTML = "";

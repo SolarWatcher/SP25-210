@@ -3,12 +3,12 @@ const menuRef = document.querySelector("#catalogSelection");
 
 //Data
 const menuItems = [
-    {image: "ImagesForMidterm/i210-midterm-product1.webp", name: "My First Fire",},
-    {image: "ImagesForMidterm/i210-midterm-product2.webp", name: "Handy Hand",},
-    {image: "ImagesForMidterm/i210-midterm-product3.webp", name: "NapSack",},
-    {image: "ImagesForMidterm/i210-midterm-product4.webp", name: "Hot Tub Wildlife Feeder",},
-    {image: "ImagesForMidterm/i210-midterm-product5.webp", name: "Toilet Meadow",},
-    {image: "ImagesForMidterm/i210-midterm-product6.webp", name: "Pudding Pouch",},
+    {image: "https://picsum.photos/210/200", name: "My First Fire",},
+    {image: "https://picsum.photos/220/200", name: "Handy Hand",},
+    {image: "https://picsum.photos/230/200", name: "NapSack",},
+    {image: "https://picsum.photos/240/200", name: "Hot Tub Wildlife Feeder",},
+    {image: "https://picsum.photos/250/200", name: "Toilet Meadow",},
+    {image: "https://picsum.photos/260/200", name: "Pudding Pouch",},
 ];
 
 menuRef.innerHTML = "";
