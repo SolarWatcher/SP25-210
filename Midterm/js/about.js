@@ -17,7 +17,7 @@ for (let i = 0; i < menuItems.length; i++) {
     const newImg = document.createElement("img")
 
     newImg.src = item.image;
-    const newText = "<p class='bold'>" + item.text + "</h4>"
+    const newText = "<h4 class='bold'>" + item.text + "</h4>"
     const newDate = "<p>" + item.date + "</p>"
 
     newArticle.appendChild(newImg);
