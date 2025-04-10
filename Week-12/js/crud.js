@@ -20,36 +20,34 @@ async function getDreams() {
 
         const data = currentDream.data();
 
-        const newDiv = document.createElement("div")
-        newDiv.classList.add("dream")
-        newDiv.innerHTML += `<h4>${data.Dreams}</h4>
-        <p>${data.hearts || 0}</p>`
+        const hearts = data.hearts || 0
 
-        const dreamHTML = `<div class="dream">
-        <h4>${data.Dreams}</h4>
-        <p>${data.hearts || 0}</p>
-        </div>`;
-
-        console.log("Hello!")
-        
-        const newPTag = document.createElement("p");
-        const newEditButton = document.createElement("button");
-        newEditButton.innerHTML = "Edit";
-        newEditButton.classList.add("edit")
-
-        const newHeartButton = document.createElement("button");
-        newHeartButton.classList.add("heart")
-        newHeartButton.innerHTML = "&hearts;"
-        newHeartButton.dataset.id = currentDream.id;
-        newHeartButton.dataset.hearts = data.hearts || 0;
-        newHeartButton.onclick = addHeart;
-
-        newPTag.appendChild(newEditButton);
-        newPTag.appendChild(newHeartButton);
-        newDiv.appendChild(newPTag);
-
-        dreamsRef.appendChild(newDiv);
+        dreamsRef.innerHTML += `<div class="dream">
+        <h4>
+        <span class="delete" data-id="${currentDream.id}">&olcross;</span>
+        ${data.Dreams}</h4>
+        <p>Likes: ${hearts}</p>
+        <p>
+          <button class="edit">Edit</button>
+          <button class="heart" data-id="${currentDream.id}" data-hearts="${hearts}" >&hearts;</button>
+        </p>
+      </div>`
     }
+
+    const heartsRef = document.querySelectorAll(".heart")
+
+    for (let i = 0; i < heartsRef.length; i++) {
+         heartsRef[i].onclick = addHeart;
+        
+        }
+
+    const crossesRef = document.querySelectorAll(".delete")
+
+    for (let i = 0; i < crossesRef.length; i++) {
+        crossesRef[i].onclick = forgetDream;
+        
+    }
+
 }
 
 async function addHeart(e) {
@@ -63,6 +61,20 @@ async function addHeart(e) {
 
     //alert("Dream Updated")
     getDreams();
+}
+
+async function forgetDream(e) {
+    console.log("Dream to froget", e.target.dataset.id)
+
+    const userConfirmed = confirm("Are you sure you want to forget this dream?")
+
+    if (userConfirmed) {
+        const dreamToDelete = doc(dreamsCollection, e.target.dataset.id)
+
+        await deleteDoc(dreamToDelete);
+
+        getDreams();
+    }
 }
 
 getDreams();
