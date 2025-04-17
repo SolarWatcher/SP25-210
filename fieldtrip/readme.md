@@ -14,3 +14,8 @@ I would say the website would have one core web page that allows you to click ar
 Not a website but super mario 64 is heavy inspiration for the diving into paintings, where it could be like that going from to page. For the colors the main hall I would have be light greys, dark greys, and medium grey colors, very plain and very dull. This way so when you dive into a painting it would suddenly be comfortable with the colors of the painting. The colors of the painting would vary from painting to painting, matching the color pallet for the pages. For the statues they would be dull at first and then when they are brough to life they fill their display with colors in an enviorment that they would of been in. For the paintings and statues I would also have some of the color bleed out into the dull room to bring life to it, so once you've explored the history of everything in the room it will be fully colorful again.
 
 The data that would need to be recorded for this is what pages and what statues you would have to interact with to save that you have interacted with them. This would also apply for the color bleeding out into the room as it would need to store that you have interacted with the painting or statue so the color stays on the page for you.
+
+Basically take some of these websites listed here and make them into an actual art gallery
+https://artsandculture.google.com
+https://theartling.com/en/?srsltid=AfmBOor9QF05d51qXJWJK16CFrkuJ9PHXOqFrbsmiEgCgg8CkcSuccv0
+https://www.nga.gov
